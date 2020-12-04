@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript" src="palavras.js"></script>
+</head>
+
+<body>
+
+
+    <div>
+        <input type="text" id="input" size=40>
+        <button id="findButton">Encontrar Anagramas</button>
+    </div>
+
+
+
+    <script>
+        const button = document.getElementById("findButton");
+        button.onclick = function() {
+            console.log("ccccccccccc");
+        }
+
+        let nome = 'ator';
+
+        nome = nome.toLowerCase().split("").sort().join("").trim();
+
+
+
+        for (let i = 0; i < palavras.length; i++) {
+            if (palavras[i].length == nome.length) {
+                if (palavras[i].toLowerCase().split("").sort().join("").trim() == nome) {
+                    console.log(palavras[i]);
+                }
+
+            }
+        }
+    </script>
+</body>
+
+</html>
